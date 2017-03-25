@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdn.rawgit.com/moma72/sm/gh-pages/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/moma72/sm/gh-pages/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
         <script src="https://cdn.rawgit.com/moma72/sm/gh-pages/node_modules/angularjs/angular.min.js"></script>
+        
         <script src="https://cdn.rawgit.com/moma72/sm/gh-pages/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="https://cdn.rawgit.com/moma72/sm/gh-pages/controller/app.js"></script>
     </head>
@@ -28,7 +29,10 @@
                         <p>{{msg}}</p>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item" ng-repeat="item in items">{{item.title}}</li>
+                        <li class="list-group-item" ng-repeat="item in items">
+                            <h4><a href="{{item.link}}">{{item.title}}</a></h4>
+                            <p>{{item.snippet}}</p>
+                        </li>
                     </ul>
                 </div>
             </div>
